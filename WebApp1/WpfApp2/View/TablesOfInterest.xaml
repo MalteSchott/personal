@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp2.View.TablesOfInterest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.View"
+        mc:Ignorable="d"
+        Title="TablesOfInterest" Height="450" Width="800">
+    
+    <Grid>
+        <Grid Margin="30,100,100,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <ListView Name="RegisteredCourses" HorizontalAlignment="Left" Width="670" ItemsSource="{Binding Rows, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedItem="{Binding Path=Selected}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="TablesOfInterest" DisplayMemberBinding="{Binding Path=TablesOfInterest}"/>
+                        <GridViewColumn Header="ColumnNames" DisplayMemberBinding="{Binding Path=ColumnNames}"/>
+                        <GridViewColumn Header="NumberOfRows" DisplayMemberBinding="{Binding Path=NumberOfRows}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Button Content="Refresh" HorizontalAlignment="Left" Height="27" Margin="721,392,0,0" VerticalAlignment="Top" Width="59"/>
+        <Label Content="Tables of interest and Metadata" FontSize="16" HorizontalAlignment="Left" Height="40" Margin="29,41,0,0" VerticalAlignment="Top" Width="319"/>
+        <Label Content="{Binding Path=Output}" HorizontalAlignment="Left" Margin="526,273,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

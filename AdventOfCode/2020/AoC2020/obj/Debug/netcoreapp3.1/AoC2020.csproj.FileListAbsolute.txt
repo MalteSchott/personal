@@ -1,0 +1,13 @@
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.exe
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.deps.json
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.runtimeconfig.json
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.runtimeconfig.dev.json
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.dll
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\bin\Debug\netcoreapp3.1\AoC2020.pdb
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.csprojAssemblyReference.cache
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.AssemblyInfoInputs.cache
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.AssemblyInfo.cs
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.csproj.CoreCompileInputs.cache
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.dll
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.pdb
+C:\Users\Malte\source\repos\MalteSchott\personal\AdventOfCode\2020\AoC2020\obj\Debug\netcoreapp3.1\AoC2020.genruntimeconfig.cache

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="languageID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EditUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchUserResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserTable">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserTableResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchColumns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchColumnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchColumnsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchEmployeeResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeData">
+        <s:complexType />
+      </s:element>
+      <s:element name="EmployeeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeDataResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployeeTables">
+        <s:complexType />
+      </s:element>
+      <s:element name="EmployeeTablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeTablesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tables1">
+        <s:complexType />
+      </s:element>
+      <s:element name="Tables1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tables1Result" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tables2">
+        <s:complexType />
+      </s:element>
+      <s:element name="Tables2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Tables2Result" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllIndex">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllIndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllIndexResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelatives">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelativesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelativesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllConstraints">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllConstraintsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllConstraintsResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeColumns1">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeeColumns1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeColumns1Result" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeColumns2">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeeColumns2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeColumns2Result" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllKeys">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllKeysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllKeysResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSickEmployees">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSickEmployeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSickEmployeesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AbsenseEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="AbsenseEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AbsenseEmployeeResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="CreateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSoapIn">
+    <wsdl:part name="parameters" element="tns:EditUser" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSoapOut">
+    <wsdl:part name="parameters" element="tns:EditUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchUserSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchUser" />
+  </wsdl:message>
+  <wsdl:message name="SearchUserSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserTable" />
+  </wsdl:message>
+  <wsdl:message name="GetUserTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchColumnsSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchColumns" />
+  </wsdl:message>
+  <wsdl:message name="FetchColumnsSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchColumnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchEmployee" />
+  </wsdl:message>
+  <wsdl:message name="SearchEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeData" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeTablesSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployeeTables" />
+  </wsdl:message>
+  <wsdl:message name="EmployeeTablesSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployeeTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Tables1SoapIn">
+    <wsdl:part name="parameters" element="tns:Tables1" />
+  </wsdl:message>
+  <wsdl:message name="Tables1SoapOut">
+    <wsdl:part name="parameters" element="tns:Tables1Response" />
+  </wsdl:message>
+  <wsdl:message name="Tables2SoapIn">
+    <wsdl:part name="parameters" element="tns:Tables2" />
+  </wsdl:message>
+  <wsdl:message name="Tables2SoapOut">
+    <wsdl:part name="parameters" element="tns:Tables2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetAllIndexSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllIndex" />
+  </wsdl:message>
+  <wsdl:message name="GetAllIndexSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelativesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelatives" />
+  </wsdl:message>
+  <wsdl:message name="GetRelativesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelativesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllConstraintsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllConstraints" />
+  </wsdl:message>
+  <wsdl:message name="GetAllConstraintsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllConstraintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeColumns1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeColumns1" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeColumns1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeColumns1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeColumns2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeColumns2" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeColumns2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeColumns2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetAllKeysSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllKeys" />
+  </wsdl:message>
+  <wsdl:message name="GetAllKeysSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSickEmployeesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSickEmployees" />
+  </wsdl:message>
+  <wsdl:message name="GetSickEmployeesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSickEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AbsenseEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:AbsenseEmployee" />
+  </wsdl:message>
+  <wsdl:message name="AbsenseEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:AbsenseEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceERPAssignmentSoap">
+    <wsdl:operation name="CreateUser">
+      <wsdl:input message="tns:CreateUserSoapIn" />
+      <wsdl:output message="tns:CreateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input message="tns:DeleteUserSoapIn" />
+      <wsdl:output message="tns:DeleteUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <wsdl:input message="tns:EditUserSoapIn" />
+      <wsdl:output message="tns:EditUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <wsdl:input message="tns:SearchUserSoapIn" />
+      <wsdl:output message="tns:SearchUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTable">
+      <wsdl:input message="tns:GetUserTableSoapIn" />
+      <wsdl:output message="tns:GetUserTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchColumns">
+      <wsdl:input message="tns:FetchColumnsSoapIn" />
+      <wsdl:output message="tns:FetchColumnsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployee">
+      <wsdl:input message="tns:SearchEmployeeSoapIn" />
+      <wsdl:output message="tns:SearchEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeData">
+      <wsdl:input message="tns:EmployeeDataSoapIn" />
+      <wsdl:output message="tns:EmployeeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTables">
+      <wsdl:input message="tns:EmployeeTablesSoapIn" />
+      <wsdl:output message="tns:EmployeeTablesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tables1">
+      <wsdl:input message="tns:Tables1SoapIn" />
+      <wsdl:output message="tns:Tables1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tables2">
+      <wsdl:input message="tns:Tables2SoapIn" />
+      <wsdl:output message="tns:Tables2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIndex">
+      <wsdl:input message="tns:GetAllIndexSoapIn" />
+      <wsdl:output message="tns:GetAllIndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelatives">
+      <wsdl:input message="tns:GetRelativesSoapIn" />
+      <wsdl:output message="tns:GetRelativesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConstraints">
+      <wsdl:input message="tns:GetAllConstraintsSoapIn" />
+      <wsdl:output message="tns:GetAllConstraintsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns1">
+      <wsdl:input message="tns:GetEmployeeColumns1SoapIn" />
+      <wsdl:output message="tns:GetEmployeeColumns1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns2">
+      <wsdl:input message="tns:GetEmployeeColumns2SoapIn" />
+      <wsdl:output message="tns:GetEmployeeColumns2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllKeys">
+      <wsdl:input message="tns:GetAllKeysSoapIn" />
+      <wsdl:output message="tns:GetAllKeysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSickEmployees">
+      <wsdl:input message="tns:GetSickEmployeesSoapIn" />
+      <wsdl:output message="tns:GetSickEmployeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AbsenseEmployee">
+      <wsdl:input message="tns:AbsenseEmployeeSoapIn" />
+      <wsdl:output message="tns:AbsenseEmployeeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceERPAssignmentSoap" type="tns:WebServiceERPAssignmentSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap:operation soapAction="http://tempuri.org/EditUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <soap:operation soapAction="http://tempuri.org/SearchUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTable">
+      <soap:operation soapAction="http://tempuri.org/GetUserTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchColumns">
+      <soap:operation soapAction="http://tempuri.org/FetchColumns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployee">
+      <soap:operation soapAction="http://tempuri.org/SearchEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeData">
+      <soap:operation soapAction="http://tempuri.org/EmployeeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTables">
+      <soap:operation soapAction="http://tempuri.org/EmployeeTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tables1">
+      <soap:operation soapAction="http://tempuri.org/Tables1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tables2">
+      <soap:operation soapAction="http://tempuri.org/Tables2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIndex">
+      <soap:operation soapAction="http://tempuri.org/GetAllIndex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelatives">
+      <soap:operation soapAction="http://tempuri.org/GetRelatives" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConstraints">
+      <soap:operation soapAction="http://tempuri.org/GetAllConstraints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns1">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeColumns1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns2">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeColumns2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllKeys">
+      <soap:operation soapAction="http://tempuri.org/GetAllKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSickEmployees">
+      <soap:operation soapAction="http://tempuri.org/GetSickEmployees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbsenseEmployee">
+      <soap:operation soapAction="http://tempuri.org/AbsenseEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceERPAssignmentSoap12" type="tns:WebServiceERPAssignmentSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUser">
+      <soap12:operation soapAction="http://tempuri.org/CreateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap12:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap12:operation soapAction="http://tempuri.org/EditUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUser">
+      <soap12:operation soapAction="http://tempuri.org/SearchUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserTable">
+      <soap12:operation soapAction="http://tempuri.org/GetUserTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchColumns">
+      <soap12:operation soapAction="http://tempuri.org/FetchColumns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployee">
+      <soap12:operation soapAction="http://tempuri.org/SearchEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeData">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTables">
+      <soap12:operation soapAction="http://tempuri.org/EmployeeTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tables1">
+      <soap12:operation soapAction="http://tempuri.org/Tables1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tables2">
+      <soap12:operation soapAction="http://tempuri.org/Tables2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllIndex">
+      <soap12:operation soapAction="http://tempuri.org/GetAllIndex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelatives">
+      <soap12:operation soapAction="http://tempuri.org/GetRelatives" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConstraints">
+      <soap12:operation soapAction="http://tempuri.org/GetAllConstraints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns1">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeColumns1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeColumns2">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeColumns2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllKeys">
+      <soap12:operation soapAction="http://tempuri.org/GetAllKeys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSickEmployees">
+      <soap12:operation soapAction="http://tempuri.org/GetSickEmployees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbsenseEmployee">
+      <soap12:operation soapAction="http://tempuri.org/AbsenseEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceERPAssignment">
+    <wsdl:port name="WebServiceERPAssignmentSoap" binding="tns:WebServiceERPAssignmentSoap">
+      <soap:address location="http://localhost:49960/WebServiceERPAssignment.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceERPAssignmentSoap12" binding="tns:WebServiceERPAssignmentSoap12">
+      <soap12:address location="http://localhost:49960/WebServiceERPAssignment.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

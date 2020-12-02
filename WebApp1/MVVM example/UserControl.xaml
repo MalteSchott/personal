@@ -1,0 +1,27 @@
+﻿<UserControl <Window ...
+        Title="Converter"
+        MinWidth="300"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight">
+
+    <Window.DataContext>
+        <local:Presenter/>
+    </Window.DataContext>
+
+    <local:ConverterControl/>
+
+    </Window> >
+
+    <UserControl.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding ConvertTextCommand}"/>
+    </UserControl.InputBindings>
+
+    <StackPanel Height="336">
+        <Label Foreground="Blue" Margin="5,5,5,0">Text To Convert</Label>
+        <TextBox Text="{Binding SomeText, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+        <Label Foreground="Blue" Margin="5,5,5,0">History</Label>
+        <ListBox ItemsSource="{Binding History}" Height="200" Margin="5"/>
+        <Button Command="{Binding ConvertTextCommand}" Margin="5">Convert</Button>
+    </StackPanel>
+
+</UserControl>

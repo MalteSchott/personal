@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceTest", "WebServiceTest\WebServiceTest.csproj", "{6CD6CD28-AFDC-486D-B00B-5650081BB81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{B35EC392-D323-416B-A23F-D434D96975B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C} = {6CD6CD28-AFDC-486D-B00B-5650081BB81C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWebServiceClient", "WpfWebServiceClient\WpfWebServiceClient.csproj", "{8C85ED5D-6F6B-4D2D-BF67-608C5FCA74DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C} = {6CD6CD28-AFDC-486D-B00B-5650081BB81C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD6CD28-AFDC-486D-B00B-5650081BB81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35EC392-D323-416B-A23F-D434D96975B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35EC392-D323-416B-A23F-D434D96975B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35EC392-D323-416B-A23F-D434D96975B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35EC392-D323-416B-A23F-D434D96975B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C85ED5D-6F6B-4D2D-BF67-608C5FCA74DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C85ED5D-6F6B-4D2D-BF67-608C5FCA74DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C85ED5D-6F6B-4D2D-BF67-608C5FCA74DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C85ED5D-6F6B-4D2D-BF67-608C5FCA74DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B375483-1849-468E-BBB0-23EFB52DF899}
+	EndGlobalSection
+EndGlobal

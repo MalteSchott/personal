@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://webServiceTaskTwo.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://webServiceTaskTwo.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://webServiceTaskTwo.com/">
+      <s:element name="GetAllMemberCourses">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllMemberCoursesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllMemberCoursesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllMembers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllMembersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllMembersResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCourses">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCoursesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCoursesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCourseColumnNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCourseColumnNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCourseColumnNamesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemberColumnNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMemberColumnNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberColumnNamesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemberCourseColumnNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMemberCourseColumnNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMemberCourseColumnNamesResult" type="tns:ArrayOfArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllColumns">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="table" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllColumnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllColumnsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllMemberCoursesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMemberCourses" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMemberCoursesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMemberCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMembersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMembers" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMembersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCoursesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCourses" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCoursesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCourseColumnNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCourseColumnNames" />
+  </wsdl:message>
+  <wsdl:message name="GetCourseColumnNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCourseColumnNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberColumnNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMemberColumnNames" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberColumnNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemberColumnNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberCourseColumnNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMemberCourseColumnNames" />
+  </wsdl:message>
+  <wsdl:message name="GetMemberCourseColumnNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemberCourseColumnNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllColumnsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllColumns" />
+  </wsdl:message>
+  <wsdl:message name="GetAllColumnsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllColumnsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService2Soap">
+    <wsdl:operation name="GetAllMemberCourses">
+      <wsdl:input message="tns:GetAllMemberCoursesSoapIn" />
+      <wsdl:output message="tns:GetAllMemberCoursesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMembers">
+      <wsdl:input message="tns:GetAllMembersSoapIn" />
+      <wsdl:output message="tns:GetAllMembersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourses">
+      <wsdl:input message="tns:GetAllCoursesSoapIn" />
+      <wsdl:output message="tns:GetAllCoursesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseColumnNames">
+      <wsdl:input message="tns:GetCourseColumnNamesSoapIn" />
+      <wsdl:output message="tns:GetCourseColumnNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberColumnNames">
+      <wsdl:input message="tns:GetMemberColumnNamesSoapIn" />
+      <wsdl:output message="tns:GetMemberColumnNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberCourseColumnNames">
+      <wsdl:input message="tns:GetMemberCourseColumnNamesSoapIn" />
+      <wsdl:output message="tns:GetMemberCourseColumnNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllColumns">
+      <wsdl:input message="tns:GetAllColumnsSoapIn" />
+      <wsdl:output message="tns:GetAllColumnsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService2Soap" type="tns:WebService2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllMemberCourses">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetAllMemberCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMembers">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetAllMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourses">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetAllCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseColumnNames">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetCourseColumnNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberColumnNames">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetMemberColumnNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberCourseColumnNames">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetMemberCourseColumnNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllColumns">
+      <soap:operation soapAction="http://webServiceTaskTwo.com/GetAllColumns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService2Soap12" type="tns:WebService2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllMemberCourses">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetAllMemberCourses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMembers">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetAllMembers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCourses">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetAllCourses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseColumnNames">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetCourseColumnNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberColumnNames">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetMemberColumnNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberCourseColumnNames">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetMemberCourseColumnNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllColumns">
+      <soap12:operation soapAction="http://webServiceTaskTwo.com/GetAllColumns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService2">
+    <wsdl:port name="WebService2Soap" binding="tns:WebService2Soap">
+      <soap:address location="http://localhost:49960/WebServiceTask2/WebService2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService2Soap12" binding="tns:WebService2Soap12">
+      <soap12:address location="http://localhost:49960/WebServiceTask2/WebService2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
