@@ -1,0 +1,16 @@
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\App.g.cs
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp_MarkupCompile.cache
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp_MarkupCompile.lref
+C:\Users\Malte\source\repos\EmployeeApp\bin\Debug\EmployeeApp.exe.config
+C:\Users\Malte\source\repos\EmployeeApp\bin\Debug\EmployeeApp.exe
+C:\Users\Malte\source\repos\EmployeeApp\bin\Debug\EmployeeApp.pdb
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.g.resources
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.Properties.Resources.resources
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.csproj.GenerateResource.cache
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.csproj.CoreCompileInputs.cache
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.exe
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.pdb
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\EmployeeApp.csprojAssemblyReference.cache
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\Views\MainWindow.baml
+C:\Users\Malte\source\repos\EmployeeApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
