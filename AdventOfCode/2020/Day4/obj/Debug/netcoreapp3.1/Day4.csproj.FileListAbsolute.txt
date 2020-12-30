@@ -1,0 +1,13 @@
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.exe
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.deps.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.runtimeconfig.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.runtimeconfig.dev.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.dll
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\bin\Debug\netcoreapp3.1\Day4.pdb
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.csprojAssemblyReference.cache
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.AssemblyInfoInputs.cache
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.AssemblyInfo.cs
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.CoreCompileInputs.cache
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.dll
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.pdb
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day4\obj\Debug\netcoreapp3.1\Day4.genruntimeconfig.cache

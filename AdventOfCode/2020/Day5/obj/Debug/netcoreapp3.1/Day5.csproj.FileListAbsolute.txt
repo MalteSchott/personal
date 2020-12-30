@@ -1,0 +1,12 @@
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.exe
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.deps.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.runtimeconfig.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.runtimeconfig.dev.json
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.dll
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\bin\Debug\netcoreapp3.1\Day5.pdb
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.AssemblyInfoInputs.cache
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.AssemblyInfo.cs
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.csproj.CoreCompileInputs.cache
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.dll
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.pdb
+D:\Programmering\Repositories\personal\AdventOfCode\2020\Day5\obj\Debug\netcoreapp3.1\Day5.genruntimeconfig.cache
