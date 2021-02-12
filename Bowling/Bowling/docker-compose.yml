@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  calculator:
+    image: ${DOCKER_REGISTRY-}calculator
+    build:
+      context: .
+      dockerfile: Calculator/Dockerfile
+    ports:
+      - "5100:80"
+
+
+  presenter:
+    image: ${DOCKER_REGISTRY-}presenter
+    build:
+      context: .
+      dockerfile: Presenter/Dockerfile
+    ports:
+      - "5101:80"
+
+
+  rolls:
+    image: ${DOCKER_REGISTRY-}rolls
+    build:
+      context: .
+      dockerfile: Rolls/Dockerfile
+    ports:
+        - "5102:80"
+
+  redis:
+    image: redis

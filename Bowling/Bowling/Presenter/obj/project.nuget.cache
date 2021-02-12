@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dPHsoIrylls8u0i7NsFKXW1nkxZYRl4LlEFDgXLI6j9zJ52CKaOG8FzPzs2sHTyR00c3cJMmze9MtKSM1jQjKA==",
+  "success": true,
+  "projectFilePath": "D:\\Programmering\\Repositories\\personal\\Bowling\\Bowling\\Presenter\\Presenter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Malte\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

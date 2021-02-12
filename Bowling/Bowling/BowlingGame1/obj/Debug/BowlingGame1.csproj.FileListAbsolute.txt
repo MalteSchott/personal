@@ -1,0 +1,7 @@
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\bin\Debug\BowlingGame1.exe.config
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\bin\Debug\BowlingGame1.exe
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\bin\Debug\BowlingGame1.pdb
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\obj\Debug\BowlingGame1.csprojAssemblyReference.cache
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\obj\Debug\BowlingGame1.csproj.CoreCompileInputs.cache
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\obj\Debug\BowlingGame1.exe
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1\obj\Debug\BowlingGame1.pdb

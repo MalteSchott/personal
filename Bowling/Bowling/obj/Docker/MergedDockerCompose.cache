@@ -1,0 +1,52 @@
+services:
+  calculator:
+    build:
+      context: D:\Programmering\Repositories\personal\Bowling\Bowling
+      dockerfile: Calculator/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: calculator
+    ports:
+    - published: 5100
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\Malte\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Malte\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  presenter:
+    build:
+      context: D:\Programmering\Repositories\personal\Bowling\Bowling
+      dockerfile: Presenter/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: presenter
+    ports:
+    - published: 5101
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\Malte\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Malte\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  redis:
+    image: redis
+  rolls:
+    build:
+      context: D:\Programmering\Repositories\personal\Bowling\Bowling
+      dockerfile: Rolls/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: rolls
+    ports:
+    - published: 5102
+      target: 80
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\Malte\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Malte\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

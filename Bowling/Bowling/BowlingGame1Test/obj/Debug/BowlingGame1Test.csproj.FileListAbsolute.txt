@@ -1,0 +1,17 @@
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\BowlingGame1Test.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\BowlingGame1Test.pdb
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\BowlingGame1.exe
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\BowlingGame1.pdb
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\BowlingGame1.exe.config
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\obj\Debug\BowlingGame1Test.csprojAssemblyReference.cache
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\obj\Debug\BowlingGame1Test.csproj.CoreCompileInputs.cache
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\obj\Debug\BowlingGame1Test.csproj.CopyComplete
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\obj\Debug\BowlingGame1Test.dll
+D:\Programmering\Repositories\personal\Bowling\Bowling\BowlingGame1Test\obj\Debug\BowlingGame1Test.pdb
