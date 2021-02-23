@@ -1,0 +1,13 @@
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.exe
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.deps.json
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.runtimeconfig.json
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.runtimeconfig.dev.json
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.dll
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\bin\Debug\netcoreapp3.1\ShakeSpearScrabble.pdb
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.csprojAssemblyReference.cache
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.AssemblyInfoInputs.cache
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.AssemblyInfo.cs
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.csproj.CoreCompileInputs.cache
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.dll
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.pdb
+D:\Programmering\Repositories\personal\ShakeSpearScrabble\obj\Debug\netcoreapp3.1\ShakeSpearScrabble.genruntimeconfig.cache
